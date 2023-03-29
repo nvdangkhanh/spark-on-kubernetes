@@ -16,5 +16,5 @@ rdd = spark.sparkContext.parallelize(data)
 dfFromRDD1 = rdd.toDF()
 dfFromRDD1.printSchema()
 dfFromRDD1.show()
-
+print("--- Test pyspark on K8s s---")
 spark.stop()
