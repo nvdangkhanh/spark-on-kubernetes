@@ -26,3 +26,5 @@
       - name: "gcs-bq"
         path: "/mnt/secrets"
         secretType: GCPServiceAccount 
+** Config UI:
+  - kubectl port-forward pyspark-on-k8s-driver 4040:4040
