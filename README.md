@@ -15,7 +15,7 @@
 
 8/ kubectl apply -f gcp_key.yaml 
 
-9/ kubectl apply -f spark_k8s.yam
+9/ kubectl apply -f spark_k8s.yaml
 
 ** Note: restart pod for each run
 
