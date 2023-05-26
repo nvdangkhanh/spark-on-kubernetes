@@ -18,3 +18,11 @@
 9/ kubectl apply -f spark_k8s.yam
 
 ** Note: restart pod for each run
+
+** Create secret: 
+  - CMD: kubectl create secret generic gcs-bq --from-file=key.json=service_account_key.json
+  - Yaml: 
+    secrets:
+      - name: "gcs-bq"
+        path: "/mnt/secrets"
+        secretType: GCPServiceAccount 
